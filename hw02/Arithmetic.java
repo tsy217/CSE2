@@ -4,35 +4,35 @@
 //compute cost of items I bought in Walmart
 //
 
-import java.text.DecimalFormat;
+import java.text.DecimalFormat;                                                 //telling compiler where the command is
 
 public class Arithmetic{
     public static void main(String[]args){                                      //main method
         DecimalFormat myformat = new DecimalFormat ("##.00");                   //declare my decimal format
-        int nSocks=3;                                                           //declare and assign variables lines 12-18
-        double sockCost$=2.58;
-        int nGlass=6;
-        double glassCost$=2.29;
-        int nEnvelopes=1;
-        double envelopeCost$=3.25;
-        double taxPercent=0.06;
-        double sockTotal$=(sockCost$*nSocks);                                   //calculations to answer questions lines 19-23
-        double glassTotal$=(glassCost$*nGlass);
-        double envelopeTotal$=envelopeCost$*nEnvelopes;
-        double total$=sockTotal$+glassTotal$+envelopeTotal$;
-        double totalstax$=total$*taxPercent;
+        int nSocks=3;                                                           //declare and assign #ofsocks
+        double sockCost$=2.58;                                                  //declare and assign sockCost
+        int nGlass=6;                                                           //declare and assign #ofglass
+        double glassCost$=2.29;                                                 //declare and assign glassCost
+        int nEnvelopes=1;                                                       //declare and assign #ofevnelope
+        double envelopeCost$=3.25;                                              //declare and assign envelopeCost
+        double taxPercent=0.06;                                                 //declare and assign taxPercent
+        double sockTotal$=(sockCost$*nSocks);                                   //calculating sockTotal
+        double glassTotal$=(glassCost$*nGlass);                                 //calculating glassTotal
+        double envelopeTotal$=envelopeCost$*nEnvelopes;                         //calculating envelopeTotal
+        double total$=sockTotal$+glassTotal$+envelopeTotal$;                    //calculating total
+        double totalstax$=total$*taxPercent;                                    //calculating totalstax
         System.out.println("Total cost of socks is "
         +(myformat.format(sockTotal$))+ " and sales tax is " 
-        +(myformat.format(sockTotal$*taxPercent))+ " dollars");                 //print out and change deci format and calculation tax%
+        +(myformat.format(sockTotal$*taxPercent))+ " dollars");                 //print out and change deci format and calculate tax% of socks
         System.out.println("Total cost of glass is "
         +(myformat.format(glassTotal$))+ " and sales tax is " 
-        +(myformat.format(glassTotal$*taxPercent))+ " dollars");                //print out and change deci format and calculation tax%
+        +(myformat.format(glassTotal$*taxPercent))+ " dollars");                //print out and change deci format and calculate tax% of glass
         System.out.println("Total cost of envelope is "
         +(myformat.format(envelopeTotal$))+ " and sales tax is "
-        +(myformat.format(envelopeTotal$*taxPercent))+ " dollars");             //print out and change deci format and calculation tax%
+        +(myformat.format(envelopeTotal$*taxPercent))+ " dollars");             //print out and change deci format and calculate tax% of envelope
         System.out.println("Total before tax is "+(myformat.format(total$))+ 
-        " dollars");                                                            //print out and change deci format and calculation tax%
+        " dollars");                                                            //print out and change deci format of total before tax
         System.out.println("Total after tax is " +(myformat.format(total$+totalstax$))+ 
-        " dollars");                                                            //print out and change deci format and calculation tax%
+        " dollars");                                                            //print out and change deci format and calculate total+tax 
     }
 }
