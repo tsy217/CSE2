@@ -3,35 +3,36 @@
 //hw02 Arithmetic
 //compute cost of items I bought in Walmart
 //
-import java.util.Scanner;
+
 import java.text.DecimalFormat;
 
 public class Arithmetic{
-    public static void main(String[]args){
-        DecimalFormat myformat = new DecimalFormat ("##.00");
-        
-        int nSocks=3;
+    public static void main(String[]args){                                      //main method
+        DecimalFormat myformat = new DecimalFormat ("##.00");                   //declare my decimal format
+        int nSocks=3;                                                           //declare and assign variables lines 12-18
         double sockCost$=2.58;
         int nGlass=6;
         double glassCost$=2.29;
         int nEnvelopes=1;
         double envelopeCost$=3.25;
         double taxPercent=0.06;
-        double sockTotal$=(sockCost$*nSocks);
+        double sockTotal$=(sockCost$*nSocks);                                   //calculations to answer questions lines 19-23
         double glassTotal$=(glassCost$*nGlass);
         double envelopeTotal$=envelopeCost$*nEnvelopes;
         double total$=sockTotal$+glassTotal$+envelopeTotal$;
         double totalstax$=total$*taxPercent;
         System.out.println("Total cost of socks is "
         +(myformat.format(sockTotal$))+ " and sales tax is " 
-        +(myformat.format(sockTotal$*taxPercent))+ " dollars");
+        +(myformat.format(sockTotal$*taxPercent))+ " dollars");                 //print out and change deci format and calculation tax%
         System.out.println("Total cost of glass is "
         +(myformat.format(glassTotal$))+ " and sales tax is " 
-        +(myformat.format(glassTotal$*taxPercent))+ " dollars");
+        +(myformat.format(glassTotal$*taxPercent))+ " dollars");                //print out and change deci format and calculation tax%
         System.out.println("Total cost of envelope is "
         +(myformat.format(envelopeTotal$))+ " and sales tax is "
-        +(myformat.format(envelopeTotal$*taxPercent))+ " dollars");
-        System.out.println("Total before tax is "+(myformat.format(total$))+ " dollars");
-        System.out.println("Total after tax is " +(myformat.format(total$+totalstax$))+ " dollars");
+        +(myformat.format(envelopeTotal$*taxPercent))+ " dollars");             //print out and change deci format and calculation tax%
+        System.out.println("Total before tax is "+(myformat.format(total$))+ 
+        " dollars");                                                            //print out and change deci format and calculation tax%
+        System.out.println("Total after tax is " +(myformat.format(total$+totalstax$))+ 
+        " dollars");                                                            //print out and change deci format and calculation tax%
     }
 }
