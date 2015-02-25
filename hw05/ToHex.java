@@ -1,3 +1,7 @@
+//Tsu Kuei, Yang
+//24/02/2015
+//
+//Turn decimal to hexa
 import java.util.Scanner;
 public class ToHex{
     public static void main (String[]arg){
