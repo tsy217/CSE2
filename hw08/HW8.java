@@ -90,6 +90,10 @@ public class HW8{
                     System.out.println("Unsuccessful escape: GIANT blocked the way!");
                 }
             }
+            else{
+                System.out.println("Excecuted by the GIANT! GAME OVER!");
+                System.exit(0);
+            }
             if(t<10){
             System.out.println("Enter 'A' or 'a' to Attack, 'E' or 'E' to Escape, ANYTHING else is to YIELD");
             userIn=scan.next();
