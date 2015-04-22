@@ -16,12 +16,12 @@ public class Multiply{
                 width1=scan.nextInt();
                 if(width1<0){
                     width1=0;
-                    System.out.print("Please re-enter a width for matrix 1: ");
+                    System.out.print("Integer has to be positive! Please re-enter a width for matrix 1: ");
                 }
             }
             else{
                 flush=scan.next();
-                System.out.print("Please re-enter a width for matrix 1: ");
+                System.out.print("Only integers! Please re-enter a width for matrix 1: ");
             }
         }
         System.out.println("Enter the height for matrix 1: ");
@@ -30,12 +30,12 @@ public class Multiply{
                 height1=scan.nextInt();
                 if(height1<0){
                     height1=0;
-                    System.out.print("Please re-enter a height for matrix 1: ");
+                    System.out.print("Integer has to be positive! Please re-enter a height for matrix 1: ");
                 }
             }
             else{
                 flush=scan.next();
-                System.out.print("Please re-enter a height for matrix 1: ");
+                System.out.print("Only integers! Please re-enter a height for matrix 1: ");
             }
         }
         
@@ -45,12 +45,12 @@ public class Multiply{
                 width2=scan.nextInt();
                 if(width2<0){
                     width2=0;
-                    System.out.print("Please re-enter a width for matrix 2: ");
+                    System.out.print("Integer has to be positive! Please re-enter a width for matrix 2: ");
                 }
             }
             else{
                 flush=scan.next();
-                System.out.print("Please re-enter a width for matrix 2: ");
+                System.out.print("Only integers! Please re-enter a width for matrix 2: ");
             }
         }
         System.out.println("Enter the height for matrix 2: ");
@@ -59,12 +59,12 @@ public class Multiply{
                 height2=scan.nextInt();
                 if(height2<0){
                     height2=0;
-                    System.out.print("Please re-enter a height for matrix 2: ");
+                    System.out.print("Integer has to be positive! Please re-enter a height for matrix 2: ");
                 }
             }
             else{
                 flush=scan.next();
-                System.out.print("Please re-enter a height for matrix 2: ");
+                System.out.print("Only integers! Please re-enter a height for matrix 2: ");
             }
         }
         while(width1!=height2){
@@ -76,12 +76,12 @@ public class Multiply{
                     width1=scan.nextInt();
                     if(width1<0){
                         width1=0;
-                        System.out.print("Please re-enter a width for matrix 1: ");
+                        System.out.print("Integer has to be positive! Please re-enter a width for matrix 1: ");
                     }
                 }
                 else{
                     flush=scan.next();
-                    System.out.print("Please re-enter a width for matrix 1: ");
+                    System.out.print("Only integers! Please re-enter a width for matrix 1: ");
                 }
             }
             System.out.print("Please re-enter a height for matrix 2: ");
@@ -90,12 +90,12 @@ public class Multiply{
                     height2=scan.nextInt();
                     if(height2<0){
                         height2=0;
-                        System.out.print("Please re-enter a height for matrix 2: ");
+                        System.out.print("Integer has to be positive! Please re-enter a height for matrix 2: ");
                     }
                 }
                 else{
                     flush=scan.next();
-                    System.out.print("Please re-enter a height for matrix 2: ");
+                    System.out.print("Only integers! Please re-enter a height for matrix 2: ");
                 }
             }
         }
