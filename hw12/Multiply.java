@@ -68,7 +68,7 @@ public class Multiply{
             }
         }
         while(width1!=height2){
-            System.out.println("Please re-enter width of matrix1 and height of matrix2 so that w1=h1");
+            System.out.println("Please re-enter width of matrix1 and height of matrix2 so that w1=h2");
             width1=0;height2=0;
             System.out.print("Please re-enter a width for matrix 1: ");
             while(width1==0){

@@ -1,10 +1,8 @@
 import java.util.Scanner;
 public class test{
     public static void main(String[]args){
-        boolean x=true;
-        int y=9;
-        if(y<0||x){
-            System.out.println(y);
-        }
+        double random=Math.random()*31;
+        random=Math.floor(random * 10) / 10;
+        System.out.println(random);
     }
 }
